@@ -258,7 +258,6 @@ void parse_file ( char * filename,
       fgets(line, sizeof(line), f);
       *strchr(line, '\n') = 0;
       //printf("name: %s\n", line);
-      clear_screen(s);
       draw_lines(edges, s, c);
       draw_polygons(polygons, s, c);
       save_extension(s, line);
